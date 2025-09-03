@@ -15,3 +15,5 @@ vim.keymap.set("i", "<Left>", '<C-o>:echo "No arrows!"<CR>')
 vim.keymap.set("i", "<Right>", '<C-o>:echo "No arrows!"<CR>')
 vim.keymap.set("i", "<Up>", '<C-o>:echo "No arrows!"<CR>')
 vim.keymap.set("i", "<Down>", '<C-o>:echo "No arrows!"<CR>')
+
+vim.keymap.set("n", "vgd", ":vsplit | lua vim.lsp.buf.definition()<CR><C-w>H")
