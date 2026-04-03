@@ -73,3 +73,11 @@ end
 vim.api.nvim_create_user_command("AddQuickfixError", add_quickfix_error, {})
 
 vim.keymap.set("n", "<leader>xa", add_quickfix_error, { desc = "Add error to quickfix list" })
+
+vim.keymap.set("n", "<leader>vp", "`[v`]", { desc = "Select last pasted text" })
+
+vim.keymap.set("n", "<leader>ch", ":CodeCompanionChat<CR>", { desc = "Open Code Companion Chat" })
+
+vim.keymap.set("n", "<leader>rn", function()
+  vim.cmd([[%s/\\n/\r/g]])
+end, { desc = "Replace literal \\n with newline in buffer" })
