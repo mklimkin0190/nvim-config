@@ -81,3 +81,5 @@ vim.keymap.set("n", "<leader>ch", ":CodeCompanionChat<CR>", { desc = "Open Code 
 vim.keymap.set("n", "<leader>rn", function()
   vim.cmd([[%s/\\n/\r/g]])
 end, { desc = "Replace literal \\n with newline in buffer" })
+
+vim.keymap.set("t", "<C-x>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
